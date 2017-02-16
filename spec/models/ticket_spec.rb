@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Ticket do
 
-  ticket = Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@mharandal.com', credit_card: '1234123412341234', expiration_date: '2/18')
+  ticket = Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@mharandal.com', credit_card: '4123123412341234', expiration_date: '2/18')
 
   describe 'ticket' do
     context 'has a first name' do
@@ -18,7 +18,7 @@ describe Ticket do
     end
 
     context 'has a credit_card' do
-      it { expect(ticket.credit_card).to eq '1234123412341234' }
+      it { expect(ticket.credit_card).to eq '4123123412341234' }
     end
 
     context 'has expiration_date' do
@@ -54,7 +54,7 @@ describe Ticket do
     let(:invalid_order) { Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@gmail.com', credit_card: '1232151235', expiration_date: '12') }
 
     context 'creditcard must be 16 characters' do
-      it { expect(invalid_order.errors.full_messages).to include "Credit card has to contain 16 numbers" }
+      it { expect(invalid_order.errors.full_messages).to include "Credit card must be a valid credit card" }
     end
 
     context 'expiration date must for formatted as M/YY' do

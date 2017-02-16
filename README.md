@@ -12,3 +12,5 @@ When I start with a rails application, I like to design my SQL schema visually f
 Schema:
 
 ![Schema Image](schema_image/schema_img.PNG)
+
+After I design the schema, I write test files for each model and association to make sure I have something to test my work against.

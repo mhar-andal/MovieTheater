@@ -5,7 +5,6 @@ describe Showing do
   cinema = Cinema.create(seating_capacity: 30)
   time = Time.now
   showing = Showing.create(movie: movie, cinema: cinema, start_time: time, end_time: movie.calc_end_time(time))
-  cinema.seating_capacity.times { Seat.create(cinema: cinema)
 
   describe 'showing' do
     context 'has a showing start_time' do

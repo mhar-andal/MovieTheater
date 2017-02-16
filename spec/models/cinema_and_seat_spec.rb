@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Cinema do
   before :each do
-    cinema = Cinema.create(seating_capacity: 30) }
+    cinema = Cinema.create(seating_capacity: 30)
     cinema.seating_capacity.times { Seat.create(cinema: cinema) }
   end
 

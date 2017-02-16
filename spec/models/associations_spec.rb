@@ -6,7 +6,7 @@ describe Showing do
   cinema = Cinema.create(seating_capacity: 30)
   ticket = Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@mharandal.com', credit_card: '1234123412341234', expiration_date: '2/18')
   time = Time.now
-  (cinema.seating_capacity-1).times { Seat.create(cinema: cinema) }
+  seat = Seat.create(cinema: cinema, seat_indentifier: "A1")
   showing = Showing.create(movie: movie, cinema: cinema, start_time: time, end_time: movie.calc_end_time(time))
   reservation = Reservation.create(ticket: ticket, seat: seat, showing: showing)
 

@@ -5,6 +5,10 @@ Project Status: Working
 
 # Work Log
 1. Designing Schema Visually
+2. Create RSpec test for Models and Associations
+3. Build toward passing the RSpec test
+4. Refactor RSpec test and Models/Associations methods
+5. Ensure all tests for Models/Associations are passing before starting Front-End work
 
 # Thought Process
 When I start with a rails application, I like to design my SQL schema visually first for all my models.

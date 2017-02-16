@@ -24,4 +24,29 @@ describe Ticket do
       it { expect(ticket.expiration_date).to eq '2/18' }
     end
   end
+
+  describe 'ticket gives' do
+    let(:invalid_ticket) { Ticket.create() }
+
+    context 'error for no first name' do
+      it { expect(ticket.errors.full_messages).to include "First name can't be blank"}
+    end
+
+    context 'error for no last name' do
+      it { expect(ticket.errors.full_messages).to include "Last name can't be blank"}
+    end
+
+    context 'error for no email' do
+      it { expect(ticket.errors.full_messages).to include "Email can't be blank"}
+    end
+
+    context 'error for no credit card' do
+      it { expect(ticket.errors.full_messages).to include "Credit card can't be blank"}
+    end
+
+    context 'error for no exp' do
+      it { expect(ticket.errors.full_messages).to include "Expiration date can't be blank"}
+    end
+  end
+
 end

@@ -1,8 +1,10 @@
 require 'rails_helper'
 
 describe Cinema do
-  let(:cinema) { Cinema.create(seating_capacity: 30) }
-  cinema.seating_capacity.times { Seat.create(cinema: cinema) }
+  before :each do
+    let(:cinema) { Cinema.create(seating_capacity: 30) }
+    cinema.seating_capacity.times { Seat.create(cinema: cinema) }
+  end
 
   describe 'cinema' do
     context 'has a seating capacity' do

@@ -13,7 +13,15 @@ describe Showing do
     end
 
     context 'has a showing end_time' do
-      it { expect(showing.end_time).to eq calc_end_time(time, movie.runtime)  }
+      it { expect(showing.end_time).to eq calc_end_time(time, movie.runtime) }
+    end
+
+    context 'has movie association' do
+      it { expect(showing.movie).to eq movie }
+    end
+
+    context 'has cinema association' do
+      it { expect(showing.cinema).to eq cinema  }
     end
   end
 end

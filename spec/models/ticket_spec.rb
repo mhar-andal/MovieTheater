@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe Ticket do
-  let(:ticket) { Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@mharandal.com', credit_card: '1234123412341234', expiration_date: '2/18') }
+
+  ticket = Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@mharandal.com', credit_card: '1234123412341234', expiration_date: '2/18')
 
   describe 'ticket' do
     context 'has a first name' do

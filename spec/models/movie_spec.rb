@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe Movie do
-  let(:movie) { Movie.new(title: "John Wick: Chapter 2", runtime: 122, imdb_link: "http://www.imdb.com/title/tt4425200/", rotten_tomatoes_link: "https://www.rottentomatoes.com/m/john_wick_chapter_2/") }
+
+  movie = Movie.new(title: "John Wick: Chapter 2", runtime: 122, imdb_link: "http://www.imdb.com/title/tt4425200/", rotten_tomatoes_link: "https://www.rottentomatoes.com/m/john_wick_chapter_2/")
 
   describe "movies" do
     context 'has movie name' do

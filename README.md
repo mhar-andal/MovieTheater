@@ -12,3 +12,10 @@ When I start with a rails application, I like to design my SQL schema visually f
 Schema:
 
 ![Schema Image](schema_image/schema_img.PNG)
+
+After I design the schema, I write test files for each model and association to make sure I have something to test my work against.
+The basic RSpec test files are finished, I now start building toward the test cases.
+
+As I was thinking about my associations, I started to think about what would be the most efficient way to gather data through these associations. I couldn't come down to a more efficient solution then the one I already have, but I did decide to build custom helper methods to better fetch information in a DRY manner.
+
+I've built a pretty solid grounding for my project as far as the backend. I'm going to start building the controllers and routing, as well as the front-end so I can start stringing everything together

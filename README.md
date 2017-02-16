@@ -8,3 +8,7 @@ Project Status: Working
 
 # Thought Process
 When I start with a rails application, I like to design my SQL schema visually first for all my models.
+
+Schema:
+
+![Schema Image](schema_image/schema_img.PNG)

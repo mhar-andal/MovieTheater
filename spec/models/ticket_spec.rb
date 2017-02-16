@@ -54,11 +54,11 @@ describe Ticket do
     let(:invalid_order) { Ticket.create(first_name: 'Mhar', last_name: 'Andal', email: 'info@gmail.com', credit_card: '1232151235', expiration_date: '12') }
 
     context 'creditcard must be 16 characters' do
-      it { expect(invalid_order.errors.full_messages).to include "Credit card must be a valid credit card" }
+      it { expect(invalid_order.errors.full_messages).to include "Credit card must be a valid" }
     end
 
     context 'expiration date must for formatted as M/YY' do
-      it { expect(invalid_order.errors.full_messages).to include "Expiration date has to be formatted as M/YY"}
+      it { expect(invalid_order.errors.full_messages).to include "Expiration date must be valid"}
     end
   end
 

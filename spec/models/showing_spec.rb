@@ -12,7 +12,7 @@ describe Showing do
     end
 
     context 'has a showing end_time' do
-      it { expect(showing.end_time).to eq calc_end_time(time, movie.runtime) }
+      it { expect(showing.end_time).to eq movie.calc_end_time(time) }
     end
 
     context 'has movie association' do

@@ -23,7 +23,7 @@ describe Showing do
 
   describe 'showing' do
     context 'has reservations' do
-      it { expect(showing.reservations).to match)array [reservation] }
+      it { expect(showing.reservations).to match_array [reservation] }
     end
   end
 end

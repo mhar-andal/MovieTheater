@@ -1,24 +1,11 @@
-# README
+# Coding Challenge for LaunchPad Labs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project Start Time: 2/15/2017
+Project Status: Working
 
-Things you may want to cover:
+# Work Log
+1. Designing Schema Visually
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Thought Process
+When I start with a rails application, I like to design my SQL schema visually first for all my models.
+  

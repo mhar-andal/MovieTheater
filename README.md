@@ -28,4 +28,4 @@ I started to think about what would be the most efficient way to gather data thr
 
 I've built a pretty solid grounding for my project as far as the backend. I'm going to start wireframing my application, being as detailed as possible what each route page is going to look like. This will provide a foundation for me to build my controllers and routes.
 
-![Schema Image](screenshots/homepage.PNG)
+![Schema Image](screenshots/homepage.png)

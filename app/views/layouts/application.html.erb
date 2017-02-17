@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MovieTheater</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>MovieTheater</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <header>
+
+    <div class="row header">
+      <div class="col-xs-8 col-md-8">
+        <h1 class="head-title">TheMovieTheater</h1>
+      </div>
+      <div class="col-xs-4 col-md-4">
+        <div class="btn-group centered">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">Manage Cinemas</a></li>
+            <li><a href="#">Display Orders</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <%= yield %>
+</body>
 </html>

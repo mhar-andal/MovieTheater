@@ -1,7 +1,11 @@
 .head-title {
   font-size: 90px;
   font-family: 'Lobster', cursive;
-  padding-left: 20px;
+  padding: 20px 30px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -9,5 +13,17 @@
 }
 
 .glyphicon {
-    font-size: 50px;
+  font-size: 80px;
+}
+
+.dropdown-menu {
+  float:left;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.btn-group {
+  padding-top: 30px;
+  padding-right: 20px;
+  float: right;
 }

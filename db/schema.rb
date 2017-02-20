@@ -23,7 +23,9 @@ ActiveRecord::Schema.define(version: 20170216161541) do
 
   create_table "movies", force: :cascade do |t|
     t.string   "title"
+    t.text     "description"
     t.integer  "runtime"
+    t.string   "poster_link"
     t.string   "imdb_link"
     t.string   "rotten_tomatoes_link"
     t.datetime "created_at",           null: false

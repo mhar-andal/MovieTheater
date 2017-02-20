@@ -1,5 +1,5 @@
 .head-title {
-  font-size: 90px;
+  font-size: 60px;
   font-family: 'Lobster', cursive;
   padding: 20px 30px;
 }
@@ -13,12 +13,12 @@ body {
 }
 
 .glyphicon {
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .dropdown-menu {
   float:left;
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 30px;
 }
 

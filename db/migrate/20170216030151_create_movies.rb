@@ -2,9 +2,9 @@ class CreateMovies < ActiveRecord::Migration[5.0]
   def change
     create_table :movies do |t|
       t.string :title
-      t.integer :runtime
       t.text :description
-      t.string :rating
+      t.integer :runtime
+      t.string :poster_link
       t.string :imdb_link
       t.string :rotten_tomatoes_link
 

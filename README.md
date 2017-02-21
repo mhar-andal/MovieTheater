@@ -31,14 +31,12 @@ Schema:
 
 ![Schema Image](screenshots/schema_img.png)
 
-After I design the schema, I write test files for each model and association to make sure I have something to test my work against.
-The basic RSpec test files are finished, I now start building toward the test cases.
-
-I've built a pretty solid grounding for my project as far as the backend. I'm going to start wireframing my application, being as detailed as possible what each route page is going to look like. This will provide a foundation for me to build my controllers and routes.
-
+After I design the schema, I wrote test files for each model and association to make sure I have something to test my work against.
+The RSpec test files are finished, I now start building toward the test cases.
+I've built a pretty solid grounding for my project as far as the backend. I'm going to start wireframing my application, as this will provide a foundation for me to build my controllers and routes.
 I finished with some of the layouts, having issues designing the UI for cinemas and showtimes. I've moved onto creating my routes and controllers. As I build these routes and controllers, I start updating the views with some basic layouts. After creating the routes/controllers/views, I started working on my database seeds so I can have content to work with.
+After I finished the seeds, I began to work on the front-end and started to string together the views/controllers. I started with the showings page and established a UI for purchasing tickets. I went with the "fandango" style dot seats for a one ticket purchase experience. After the UI design, I worked on ticket purchase page. At this point, I integrated the validations for the credit card information as well as the action mailer for the email order receipts. After finishing the ticket purchasing, I moved on to the cinema management page, where I created a basic cinema 
 
-When I finished with the seeds, I worked on the views so that everything can look proper and nice. I finished the views for the homepage, showings page, and ticket purchase pages.
 
 ![Schema Image](screenshots/homepage.png)
 ![Schema Image](screenshots/cinema.png)

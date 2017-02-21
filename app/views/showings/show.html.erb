@@ -4,6 +4,24 @@
       <img class="image" src="<%= @showing.movie.poster_link %>"
     </div>
   </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6">
+      <a href="<%= @showing.movie.imdb_link %>"><img class="logo-link imdb" src="http://ia.media-imdb.com/images/M/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png"></a>
+    </div>
+    <div class="col-xs-6 col-md-6">
+      <a href="<%= @showing.movie.rotten_tomatoes_link %>"><img class="logo-link" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Rotten_Tomatoes_logo.svg/1024px-Rotten_Tomatoes_logo.svg.png"></a>
+    </div>
+  </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">
+    <div class="col-xs-2 col-md-2"></div>
+    <div class="col-xs-8 col-md-8">
+      <p><%= @showing.movie.description %></p>
+    </div>
+    <div class="col-xs-2 col-md-2"></div>
+  </div>
   <div class="row">
     <div class="col-xs-12 col-md-12" align="center">
       <h1>Cinema <%= @showing.cinema.id %></h1>

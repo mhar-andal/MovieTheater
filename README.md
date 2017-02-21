@@ -12,12 +12,16 @@ Project Status: Working
 6. Setup Bootstrap framework environment
 7. Establish Header Layout(Header Title and Menu Button)
 8. Deploy to heroku to test on mobile phone rather than chrome dev tool mobile view
-9. Wireframe Entire Layout with Routes
+9. Wireframe Basic Layout with Routes
 10. Create Routes/Controllers
 11. Setup Database seeds
 12. Finish Homepage(/)
 13. Finish Showing Page(/showings/:id)
 14. Finish Ticket Purchase with Mailing
+15. Finish Cinema Pages(create/edit)
+16. Finish Showing Pages(create/show)
+17. Finish Movie Pages(create/show)
+18. Finish Order Display(show)
 
 
 # Thought Process

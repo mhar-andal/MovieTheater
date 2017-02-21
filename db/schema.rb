@@ -42,9 +42,9 @@ ActiveRecord::Schema.define(version: 20170216161541) do
 
   create_table "seats", force: :cascade do |t|
     t.integer  "cinema_id"
-    t.string   "seat_indentifier"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.string   "seat_identifier"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "showings", force: :cascade do |t|

@@ -1,2 +1,26 @@
-<h1>Cinemas#new</h1>
-<p>Find me in app/views/cinemas/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 ticket-new centered">
+      <% if @cinema.errors.any? %>
+        <% @cinema.errors.full_messages.each do |error| %>
+          <p style="color: red"><%= error %>!</p>
+        <% end %>
+      <% end %>
+      <form method="post" action="/cinemas/new">
+        <div class="form-group">
+          <label>Seating Capacity</label>
+          <input type="text" class="form-control" name="cinema[seating_capacity]" required>
+        </div>
+        <div class="form-group">
+          <label>Movie</label>
+          <select class="form-control" name="cinema[movie]">
+            <% @movies.each do |movie| %>
+              <option><%= movie.title %></option>
+            <% end %>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

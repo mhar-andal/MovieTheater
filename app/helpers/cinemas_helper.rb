@@ -8,4 +8,8 @@ module CinemasHelper
       Seat.create(cinema: @cinema, seat_identifier: "#{letters[i/10]}#{(i%10) + 1}")
     end
   end
+
+  def any_showings?(cinema)
+    cinema.showings == [] ? false : true
+  end
 end

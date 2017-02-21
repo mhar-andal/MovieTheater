@@ -6,6 +6,18 @@ class CinemasController < ApplicationController
   end
 
   def new
+    @cinema = Cinema.new
+    @movies = Movie.all
+  end
+
+  def create
+    @movies = Movie.all
+    @cinema = Cinema.new(seating_capacity: params[:cinema][:seating_capacity])
+    if @cinema.save
+      redirect_to "/cinemas"
+    else
+      render action: "new"
+    end
   end
 
   def edit

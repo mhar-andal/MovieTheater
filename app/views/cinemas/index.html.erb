@@ -1,0 +1,16 @@
+<div class="container>">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <a href="/cinemas/new"><button type="button" class="btn btn-primary cinema_button">Add Cinema</button></a>
+    </div>
+  </div>
+  <% @cinemas.each do |cinema| %>
+    <div class="row">
+      <div class="col-xs-12 col-md-12" align="center">
+        <h1>Cinema <%= cinema.id %></h1>
+        <p>Current Movie: <%= cinema.showings.first.movie.title %></p>
+        <a href="/cinemas/<%= cinema.id %>/edit">Edit</a>
+      </div>
+    </div>
+  <% end %>
+</div>

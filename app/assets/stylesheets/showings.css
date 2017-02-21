@@ -24,3 +24,11 @@
 .seating-row {
   padding-top: 10px;
 }
+
+.seat-info-right {
+  float: right;
+}
+
+.seat-info-left {
+  float: left;
+}

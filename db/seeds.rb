@@ -81,13 +81,3 @@ p movies
 for i in (0...Movie.all.length)
   Showing.create(movie: movies[i], cinema: cinemas[i], start_time: Time.now, end_time: (Time.now + movies[i].runtime.minutes))
 end
-
-10.times {Ticket.create(first_name: "Mhar", last_name: "Andal", email: "mharandal@gmail.com", credit_card: "5424123412341234", expiration_date: "02/20")}
-
-tickets = Ticket.all
-seats = Seat.all
-
-for i in (1..10)
-  p i
-  Reservation.create(ticket: tickets[i], seat: seats[i], showing_id: 1)
-end

@@ -7,7 +7,7 @@ letters = ["A", "B", "C", "D", "E", "F", "G"]
 10.times {Cinema.create(seating_capacity: rand_seat_capacity)}
 
 Cinema.all.each do |cinema|
-  for i in (0..cinema.seating_capacity)
+  for i in (0...cinema.seating_capacity)
     Seat.create(cinema: cinema, seat_identifier: "#{letters[i/10]}#{(i%10) + 1}")
   end
 end

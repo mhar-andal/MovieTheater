@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'orders/index'
+
+  get 'orders/show'
+
   resources :showings, only: [:index, :show] do
     resources :seats, only: [:index] do
       resources :tickets, only: [:new]

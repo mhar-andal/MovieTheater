@@ -32,7 +32,7 @@ When I start with a rails application, I like to design my SQL schema visually f
 
 Schema:
 
-![Schema Image](screenshots/schema_img.png)
+![Schema Image](screenshots/schema_img.PNG)
 
 Wireframe:
 ![Schema Image](screenshots/homepage.png)

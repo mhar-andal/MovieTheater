@@ -40,6 +40,8 @@ Wireframe:
 ![Schema Image](screenshots/ticket_new.PNG)
 
 ## Design Decisions
+I choose Twitters Bootstrap framework because I'm comfortable working with it and it's fairly simple to create a mobile-responsive application.
+
 When designing the UI/UX, I kept a couple thoughts in my head about how I would approach this. First thing I want to go over is the User Experience. I designed the homepage such that a customer could visit and know exactly what to do. I list all the movies with clickable showtime buttons beneath the poster, this allowed the user to just click a showtime and see more information about the movie/showtime. If you click the movie poster, it brings you to a page about the movies information. I felt that it was a bit repetitive to have the same information on both pages, if I were to refactor this, I probably would combine the movie show page with showtimes and allow the client to navigate throughout all the showtimes.
 
 The prompt stated to only worry about a single ticket at a time. I chose an interactive seat grid to process a single ticket because I felt like it gave the customer more of a visual decision on where they want to sit. It only works with purchasing one ticket, but if I were to optimize for a multi-ticket purchase, I would allow the user to select multiple seats and purchase tickets at one time. I would probably list the seat identifiers above or on the bubbles so the customer knows exactly where they are sitting. The email receipt gives information about their seat, but I think it would improve the UX a whole lot if it was given in the application.

@@ -13,6 +13,7 @@ class CinemasController < ApplicationController
   def create
     @cinema = Cinema.new(seating_capacity: params[:cinema][:seating_capacity])
     if @cinema.save
+      createSeats(@cinema)
       redirect_to "/cinemas"
     else
       render action: "new"

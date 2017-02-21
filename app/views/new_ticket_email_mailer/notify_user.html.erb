@@ -1,0 +1,9 @@
+<div><h1>Thanks for your ticket order <%= @ticket.first_name %>!</h1></div>
+
+<div>ORDER DETAILS</div>
+<div>====================================</div>
+<div>
+  <h1><%= @reservation.showing.movie.title %></h1>
+  <p>Cinema <%= @reservation.showing.cinema.id %></p>
+  <p>Seat <%= @reservation.seat.seat_identifier %></p>
+</div>

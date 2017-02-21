@@ -1,0 +1,44 @@
+<div class="container">
+    <% @movies.each_with_index do |movie, index| %>
+      <% if index == 0 %>
+        <div class="row">
+          <div class="col-xs-12 col-md-4 movie-box" align="center">
+            <img class="image" src="<%= movie.poster_link %>">
+            <div class="row">
+              <div class="col-xs-12 col-md-12 showtime-box" align="center">
+                <% movie.showings.each do |showing| %>
+                <button type="button" class="btn btn-default showtime"><a href="/cinema/<%= showing.cinema.id %>/movie"><%= showing.start_time.strftime("%I:%M%p") %></a></button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+      <% elsif index % 3 == 0 %>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+          <div class="row">
+          <div class="col-xs-12 col-md-4 movie-box" align="center">
+            <img class="image" src="<%= movie.poster_link %>">
+            <div class="row">
+              <div class="col-xs-12 col-md-12 showtime-box" align="center">
+                <% movie.showings.each do |showing| %>
+                  <button type="button" class="btn btn-default showtime"><%= showing.start_time.strftime("%I:%M%p") %></button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+      <% else %>
+          <div class="col-xs-12 col-md-4 movie-box" align="center">
+            <img class="image" src="<%= movie.poster_link %>">
+            <div class="row">
+              <div class="col-xs-12 col-md-12 showtime-box" align="center">
+                <% movie.showings.each do |showing| %>
+                  <button type="button" class="btn btn-default showtime"><%= showing.start_time.strftime("%I:%M%p") %></button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+      <% end %>
+    <% end %>
+</div>

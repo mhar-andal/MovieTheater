@@ -7,7 +7,7 @@ class TicketsController < ApplicationController
   def create
     @ticket = Ticket.new(ticket_params)
     if @ticket.save
-
+      Reservation.create(ticket: @ticket, seat: Seat.find(params[:seat_id]), showing: Showing.find(params[:showing_id]))
     else
       render action: 'new'
     end

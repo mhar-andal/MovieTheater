@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :showings, only: [:new]
   resources :movies, only: [:index, :show, :new]
 
-  post "/cinemas/:id/movies/:id/showings/:id/seats/:id/tickets/new" => "tickets#create"
+  post "/showings/:showing_id/seats/:seat_id/tickets/new" => "tickets#create"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'movies#index'

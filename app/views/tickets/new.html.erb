@@ -2,30 +2,30 @@
   <div class="row">
     <div class="col-xs-12 col-md-12 ticket-new centered">
       <% if @ticket.errors.any? %>
-      <% @ticket.errors.full_messages.each do |error| %>
-        <p style="color: red"><%= error %>!</p>
-      <% end %>
+        <% @ticket.errors.full_messages.each do |error| %>
+          <p style="color: red"><%= error %>!</p>
+        <% end %>
       <% end %>
       <form method="post" action="/showings/<%= params[:showing_id] %>/seats/<%= params[:seat_id] %>/tickets/new">
         <div class="form-group">
           <label>First Name</label>
-          <input type="text" class="form-control" placeholder="First Name" name="ticket[first_name]">
+          <input type="text" class="form-control" placeholder="First Name" name="ticket[first_name]" required>
         </div>
         <div class="form-group">
           <label>Last Name</label>
-          <input type="text" class="form-control" placeholder="Last Name" name="ticket[last_name]">
+          <input type="text" class="form-control" placeholder="Last Name" name="ticket[last_name]" required>
         </div>
         <div class="form-group">
           <label>Email</label>
-          <input type="email" class="form-control" placeholder="Email" name="ticket[email]">
+          <input type="email" class="form-control" placeholder="Email" name="ticket[email]" required>
         </div>
         <div class="form-group">
           <label>Credit Card</label>
-          <input type="text" class="form-control" placeholder="Credit Card" name="ticket[credit_card]">
+          <input type="text" class="form-control" placeholder="Credit Card" name="ticket[credit_card]" required>
         </div>
         <div class="form-group">
           <label>Expiration Date</label>
-          <input type="text" class="form-control" placeholder="Ex. 02/20" name="ticket[expiration_date]">
+          <input type="text" class="form-control" placeholder="Ex. 02/20" name="ticket[expiration_date]" required>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>

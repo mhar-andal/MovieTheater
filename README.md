@@ -37,7 +37,7 @@ Schema:
 Wireframe:
 ![Schema Image](screenshots/homepage.png)
 ![Schema Image](screenshots/cinema.png)
-![Schema Image](screenshots/ticket_new.png)
+![Schema Image](screenshots/ticket_new.PNG)
 
 ## Design Decisions
 When designing the UI/UX, I kept a couple thoughts in my head about how I would approach this. First thing I want to go over is the User Experience. I designed the homepage such that a customer could visit and know exactly what to do. I list all the movies with clickable showtime buttons beneath the poster, this allowed the user to just click a showtime and see more information about the movie/showtime. If you click the movie poster, it brings you to a page about the movies information. I felt that it was a bit repetitive to have the same information on both pages, if I were to refactor this, I probably would combine the movie show page with showtimes and allow the client to navigate throughout all the showtimes.

@@ -1,0 +1,9 @@
+.movie-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.movie-title a:hover {
+  text-decoration: underline;
+  color: black;
+}

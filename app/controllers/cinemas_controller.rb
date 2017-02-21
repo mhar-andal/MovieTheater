@@ -2,7 +2,7 @@ class CinemasController < ApplicationController
   include CinemasHelper
   skip_before_filter  :verify_authenticity_token
   def index
-    @cinemas = Cinema.all
+    @cinemas = Cinema.all.order('id ASC')
   end
 
   def new

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12" align="center">
+      <img class="image" src="<%= @showing.movie.poster_link %>"
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-12" align="center">
+      <h1>Seating</h1>
+      <% @seats.each_with_index do |seat, index| %>
+        <% if index == 0 %>
+        <div class="seating-row">
+          <button type="button" class="btn btn-default btn-circle"></button>
+        <% elsif index % 10 == 0 %>
+          </div>
+          <div class="seating-row">
+            <button type="button" class="btn btn-default btn-circle"></button>
+        <% else %>
+          <button type="button" class="btn btn-default btn-circle"></button>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

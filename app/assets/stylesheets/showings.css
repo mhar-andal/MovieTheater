@@ -32,3 +32,12 @@
 .seat-info-left {
   float: left;
 }
+
+.logo-link {
+  width: 40%;
+  height: 50%;
+}
+
+.imdb {
+  float: right;
+}

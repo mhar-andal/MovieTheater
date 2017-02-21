@@ -1,5 +1,5 @@
 .head-title {
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Lobster', cursive;
   padding: 20px 30px;
 }
@@ -18,13 +18,12 @@ body {
 }
 
 .glyphicon {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .dropdown-menu {
   float:left;
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 20px;
 }
 
 .btn-group {
@@ -54,14 +53,4 @@ body {
 .showtime-box a {
   text-decoration: none;
   color: black;
-}
-
-@media only screen and (max-width: 1000px) {
-  .image {
-    width: 80%;
-    height: 90%;
-  }
-  .showtime {
-    font-size: 40px;
-  }
 }

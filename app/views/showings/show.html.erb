@@ -8,29 +8,34 @@
     <div class="col-xs-12 col-md-12" align="center">
       <h1>Seating</h1>
       <% @seats.each_with_index do |seat, index| %>
-        <% if index == 0 %>
-        <div class="seating-row">
-          <% if @seats_taken.include?(seat) %>
-            <span class="btn btn-circle-white"></span>
-          <% else %>
-            <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
-          <% end %>
-        <% elsif index % 10 == 0 %>
-          </div>
-          <div class="seating-row">
-            <% if @seats_taken.include?(seat) %>
-              <span class="btn btn-circle-white"></span>
-            <% else %>
-            <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
-            <% end %>
+      <% if index == 0 %>
+      <div class="seating-row">
+        <% if @seats_taken.include?(seat) %>
+        <span class="btn btn-circle-white"></span>
         <% else %>
-          <% if @seats_taken.include?(seat) %>
-            <span class="btn btn-circle-white"></span>
-          <% else %>
-          <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
-          <% end %>
+        <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
         <% end %>
-      <% end %>
+        <% elsif index % 10 == 0 %>
+      </div>
+      <div class="seating-row">
+        <% if @seats_taken.include?(seat) %>
+        <span class="btn btn-circle-white"></span>
+        <% else %>
+        <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
+        <% end %>
+        <% else %>
+        <% if @seats_taken.include?(seat) %>
+        <span class="btn btn-circle-white"></span>
+        <% else %>
+        <a href="/cinemas/<%= @showing.cinema.id %>/movies/<%= @showing.movie.id %>/showings/<%= @showing.id %>/seats/<%= seat.id %>/tickets/new"><button type="button" class="btn btn-default btn-circle-blue"></button></a>
+        <% end %>
+        <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+
 </div>

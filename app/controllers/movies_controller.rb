@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  include MoviesHelper
   def index
     @movies = Movie.all
   end

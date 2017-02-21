@@ -6,7 +6,7 @@
         <p style="color: red"><%= error %>!</p>
       <% end %>
       <% end %>
-      <form method="post" action="/cinemas/<%= params[:cinema_id] %>/movies/<%= params[:movie_id] %>/showings/<%= params[:showing_id] %>/seats/<%= params[:seat_id] %>/tickets/new">
+      <form method="post" action="/showings/<%= params[:showing_id] %>/seats/<%= params[:seat_id] %>/tickets/new">
         <div class="form-group">
           <label>First Name</label>
           <input type="text" class="form-control" placeholder="First Name" name="ticket[first_name]">

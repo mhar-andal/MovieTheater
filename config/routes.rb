@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  resources :cinemas, only: [:index, :show, :new] do
-    resources :movies, only: [:index] do
-      resources :showings, only: [:index, :show] do
-        resources :seats, only: [:index] do
-          resources :tickets, only: [:new]
-        end
-      end
+
+  resources :showings, only: [:index, :show] do
+    resources :seats, only: [:index] do
+      resources :tickets, only: [:new]
     end
   end
   resources :showings, only: [:new]

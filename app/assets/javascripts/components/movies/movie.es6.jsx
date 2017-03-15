@@ -7,7 +7,13 @@ class Movie extends React.Component {
 
 
 
-  render () 
+  render () {
+    return (
+      <div className="container">
+        <div className="left"></div>
+        <div className="middle"></div>
+        <div className="right"></div>
+      </div>
 
     )
   }

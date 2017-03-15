@@ -5,8 +5,6 @@ class Movie extends React.Component {
     this.state = { movies } = this.props;
   }
 
-
-
   render () {
     return (
       <div className="container">

@@ -18,9 +18,3 @@
 //= require react_ujs
 //= require components
 //= require_tree .
-
-window.$ = window.jQuery = global.$ = require('jquery');
-var React = window.React = global.React = require('react');
-require( 'jquery-ujs' );
-require( 'fetch' );
-require( './components' );

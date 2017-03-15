@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
   get "/orders/all" => "orders#all"
   get "/movies/:movie_id/orders" => "orders#show"
+  get "/movies" => "movies#index"
   resources :orders, only: [:index, :show]
   resources :movies, only: [:show]
   resources :cinemas, only: [:index, :show, :edit, :new]

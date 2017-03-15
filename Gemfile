@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
 gem 'jquery-rails'
 gem 'react-rails'
+gem "active_model_serializers",  '~> 0.8.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -30,11 +31,17 @@ gem 'react-rails'
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-pluralize'
+  gem 'rails-assets-es6-promise'
+  gem 'rails-assets-fetch'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platform: :mri
-  gem 'pry-rails'
+  # gem 'pry-rails'
 end
 
 group :development do

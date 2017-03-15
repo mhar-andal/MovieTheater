@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <div class="row header">
       <div class="col-xs-8 col-md-8">
         <h1 class="head-title"><a href="/">TheMovieTheater</a></h1>
@@ -30,7 +30,10 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
+
+  <%= react_component('Navbar',{prerender: true}) %>
+
   <%= yield %>
 </body>
 </html>
